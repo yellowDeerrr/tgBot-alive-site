@@ -26,7 +26,7 @@ def start_sending(times_to_do_send, message, bot):
                 print("Sending process stopped.")
                 break
         send_get_request(message, bot)
-        time.sleep(5)  # Adjust this to a reasonable value; 5 seconds for testing
+        time.sleep(30)  # Adjust this to a reasonable value; 5 seconds for testing
 
     bot.send_message(message.chat.id, "Sending process completed.")
     print("Sending process completed.")

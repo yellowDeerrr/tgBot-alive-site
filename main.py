@@ -13,7 +13,7 @@ def send_welcome(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1 = types.KeyboardButton('Start sending')
     markup.add(item1)
-    bot.send_message(message.chat.id, "Choose", reply_markup=markup)
+    bot.send_message(message.chat.id, "https://render-app-jtov.onrender.com", reply_markup=markup)
 
 @bot.message_handler(content_types=['text'])
 def handle_message(message):
